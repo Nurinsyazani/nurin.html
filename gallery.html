@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+
+<head>
+    <title>Gallery</title>
+</head>
+
+	<style>
+		.container{
+			width:100%;
+			padding:10px;
+			margin:5px auto ;
+			display:flex;
+			flex-direction: row;
+			justify-content: center;
+		}
+		
+		.box{
+			width:250px;
+			margin:50px;
+			box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0)
+		}
+		
+		.box img{
+			display: block;
+			width:100%
+			border-radius: 5px;
+		}
+		
+		.box:hover{
+			transform:scale(1.2);
+			z-index:2;
+		}
+	
+	
+	</style>
+
+
+	<body style="background-color:#FABFBA;">
+		<h1><center>"Frames of Memory: My Gallery"</center></h1>
+		
+    <p>
+		<h3> <center> A gallery is a window to the soul, showcasing moments too beautiful to be forgotten. </center> </h3>
+	</p>
+	
+	<div class="container"> 
+		<div class="box">
+			<img src="gallery_cat.jpg" width="260" height="380" >
+			<h2><center> LEO <center></h2>
+	</div>
+	
+	
+	<div class="box">
+		<img src="gallery_healing.jpg" width="260" height="380">
+		<h2><center> HEALING <center></h2>
+	</div>
+	
+ 
+	<div class="box">
+		<img src="gallery_flowers.jpg" width="260" height="380">
+		<h2><center> FLOWERS <center></h2>
+	</div> 
+	
+	<div class="box">
+		<video controls width="260" height="380">
+		<source src="gallery_video.mp4" type="video/mp4">
+		</video>
+		<h2><center> SUNSET VIDEO <center></h2>
+	</div>
+	
+	
+</body>
+
+</html>

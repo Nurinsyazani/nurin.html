@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<Title>Home Page</Title>
+</head>
+
+
+	<style>
+        #clock {
+            font-size: 2em;
+            color: #333;
+            font-family: Arial, sans-serif;
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+	
+<body style="background-color:#FABFBA;">
+	
+
+	
+	<h1> 
+		<center> <strong> Welcome to My Personal Website </strong> </center>
+	</h1>
+	<br>
+	
+	<div>
+		<h1 id="clock">00:00:00</h1>
+	</div>
+
+    <script>
+        function showClock() {
+            const now = new Date();
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const seconds = String(now.getSeconds()).padStart(2, '0');
+            document.getElementById('clock').textContent = `${hours}:${minutes}:${seconds}`;
+        }
+
+        setInterval(showClock, 1000);
+        showClock(); 
+    </script>
+
+	
+	
+	<center>
+		<a href="picture_page.jpg" > <img src="picture_page.jpg" style=" width:300px; height:300px; border-radius:400%; border-color: black; border-style: solid;" align="middle">
+		</a>
+	</center>
+	<br>
+	
+	
+	<p>
+		<center><strong>
+		Hello! I'am Nurin Syazani. <br> 
+		This portfolio showcases my biodata, experiences, and so on. <br> 
+		Feel free to explore and get to know me better!
+		</center></strong>
+	</p>
+	
+	
+
+</body>
+
+</html>
